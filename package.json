@@ -1,0 +1,31 @@
+{
+  "name": "ruuvi-influx-grafana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "babel ./ -d dist",
+    "serve": "NODE_ENV=prod node index.js",
+    "test": "./node_modules/.bin/eslint src/* && mocha --require babel-register"
+  },
+  "author": "Niko",
+  "license": "ISC",
+  "dependencies": {
+    "influx": "^5.0.7",
+    "node-ruuvitag": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}

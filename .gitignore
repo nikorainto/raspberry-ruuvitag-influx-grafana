@@ -1,0 +1,7 @@
+/node_modules
+/build
+/data
+
+# Ignore test-related files
+/coverage.data
+/coverage/
